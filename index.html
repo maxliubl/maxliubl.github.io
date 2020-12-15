@@ -155,14 +155,27 @@
     <article id="post-Linux-command-notebook" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/15/Linux-command-notebook/">Linux command notebook</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/15/Linux-command-notebook/" class="archive-article-date">
+  	<time datetime="2020-12-15T12:24:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-15</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>title: Linux command notebook<br>date: 2020-12-15 20:11:09<br>tags:<br>    Linux</p>
-<h2 id="ln-s-a-b-软链接"><a href="#ln-s-a-b-软链接" class="headerlink" title="ln -s a b 软链接"></a>ln -s a b 软链接</h2><p>ln -s a b 中的 a 就是源文件，b是链接文件名,其作用是当进入b目录，实际上是链接进入了a目录</p>
-<p>如上面的示例，当我们执行命令   cd /gamestat/的时候  实际上是进入了 /home/gamestat/</p>
+        <h4 id="1-ln-s-a-b-软链接"><a href="#1-ln-s-a-b-软链接" class="headerlink" title="1.ln -s a b 软链接"></a>1.ln -s a b 软链接</h4><p>ln -s a b 中的 a 就是源文件，b是链接文件名,其作用是当进入b目录，实际上是链接进入了a目录</p>
+<p>如上面的示例，当我们执行命令 cd /gamestat/的时候 实际上是进入了 /home/gamestat/</p>
 <p>值得注意的是执行命令的时候,应该是a目录已经建立，目录b没有建立。我最开始操作的是也把b目录给建立了，结果就不对了</p>
-<p>删除软链接：rm -rf  b  注意不是rm -rf  b/</p>
+<p>删除软链接：rm -rf b 注意不是rm -rf b/</p>
 
       
 
@@ -171,6 +184,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -395,6 +419,10 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
